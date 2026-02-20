@@ -1,0 +1,1946 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.15  (Win32)">
+	<META NAME="AUTHOR" CONTENT="H&eacute;ctor Sandoval">
+	<META NAME="CREATED" CONTENT="20260220;15024955">
+	<META NAME="CHANGEDBY" CONTENT="H&eacute;ctor Sandoval">
+	<META NAME="CHANGED" CONTENT="20260220;15032066">
+</HEAD>
+<BODY LANG="es-MX" DIR="LTR">
+<P>&lt;!DOCTYPE html&gt;</P>
+<P>&lt;html lang=&quot;es&quot;&gt;</P>
+<P>&lt;head&gt;</P>
+<P>    &lt;meta charset=&quot;UTF-8&quot;&gt;</P>
+<P>    &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</P>
+<P>    &lt;title&gt;CarBrake Shop | Especialistas en Frenos y
+Suspensi&oacute;n&lt;/title&gt;</P>
+<P>    &lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;display=swap&quot;
+rel=&quot;stylesheet&quot;&gt;</P>
+<P>    &lt;link rel=&quot;stylesheet&quot;
+href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&quot;&gt;</P>
+<P>    &lt;style&gt;</P>
+<P>        :root {</P>
+<P>            --primary: #dc2626;</P>
+<P>            --primary-dark: #b91c1c;</P>
+<P>            --secondary: #1f2937;</P>
+<P>            --accent: #f59e0b;</P>
+<P>            --light: #f3f4f6;</P>
+<P>            --dark: #111827;</P>
+<P>            --text: #374151;</P>
+<P>            --gradient: linear-gradient(135deg, #dc2626 0%,
+#b91c1c 100%);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        * {</P>
+<P>            margin: 0;</P>
+<P>            padding: 0;</P>
+<P>            box-sizing: border-box;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        body {</P>
+<P>            font-family: 'Inter', sans-serif;</P>
+<P>            color: var(--text);</P>
+<P>            line-height: 1.6;</P>
+<P>            overflow-x: hidden;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Header Mejorado */</P>
+<P>        header {</P>
+<P>            position: fixed;</P>
+<P>            top: 0;</P>
+<P>            width: 100%;</P>
+<P>            background: rgba(255,255,255,0.95);</P>
+<P>            backdrop-filter: blur(10px);</P>
+<P>            z-index: 1000;</P>
+<P>            box-shadow: 0 2px 20px rgba(0,0,0,0.1);</P>
+<P>            transition: all 0.3s ease;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        nav {</P>
+<P>            max-width: 1200px;</P>
+<P>            margin: 0 auto;</P>
+<P>            padding: 1rem 2rem;</P>
+<P>            display: flex;</P>
+<P>            justify-content: space-between;</P>
+<P>            align-items: center;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .logo {</P>
+<P>            font-size: 1.8rem;</P>
+<P>            font-weight: 800;</P>
+<P>            color: var(--primary);</P>
+<P>            text-decoration: none;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 0.5rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .nav-links {</P>
+<P>            display: flex;</P>
+<P>            gap: 2rem;</P>
+<P>            list-style: none;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .nav-links a {</P>
+<P>            text-decoration: none;</P>
+<P>            color: var(--secondary);</P>
+<P>            font-weight: 600;</P>
+<P>            transition: color 0.3s;</P>
+<P>            position: relative;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .nav-links a:hover {</P>
+<P>            color: var(--primary);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .nav-links a::after {</P>
+<P>            content: '';</P>
+<P>            position: absolute;</P>
+<P>            bottom: -5px;</P>
+<P>            left: 0;</P>
+<P>            width: 0;</P>
+<P>            height: 2px;</P>
+<P>            background: var(--primary);</P>
+<P>            transition: width 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .nav-links a:hover::after {</P>
+<P>            width: 100%;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .cta-header {</P>
+<P>            background: var(--gradient);</P>
+<P>            color: white;</P>
+<P>            padding: 0.75rem 1.5rem;</P>
+<P>            border-radius: 50px;</P>
+<P>            text-decoration: none;</P>
+<P>            font-weight: 600;</P>
+<P>            transition: transform 0.3s, box-shadow 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .cta-header:hover {</P>
+<P>            transform: translateY(-2px);</P>
+<P>            box-shadow: 0 10px 25px rgba(220,38,38,0.3);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Hero Section Impactante */</P>
+<P>        .hero {</P>
+<P>            margin-top: 80px;</P>
+<P>            min-height: 90vh;</P>
+<P>            background: linear-gradient(135deg, #1f2937 0%,
+#111827 100%);</P>
+<P>            position: relative;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            overflow: hidden;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero::before {</P>
+<P>            content: '';</P>
+<P>            position: absolute;</P>
+<P>            top: 0;</P>
+<P>            left: 0;</P>
+<P>            right: 0;</P>
+<P>            bottom: 0;</P>
+<P>            background: url('data:image/svg+xml,&lt;svg width=&quot;60&quot;
+height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot;
+xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;g fill=&quot;none&quot;
+fill-rule=&quot;evenodd&quot;&gt;&lt;g fill=&quot;%23ffffff&quot;
+fill-opacity=&quot;0.03&quot;&gt;&lt;path d=&quot;M36
+34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6
+34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6
+4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;');</P>
+<P>            opacity: 0.5;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-content {</P>
+<P>            max-width: 1200px;</P>
+<P>            margin: 0 auto;</P>
+<P>            padding: 0 2rem;</P>
+<P>            display: grid;</P>
+<P>            grid-template-columns: 1fr 1fr;</P>
+<P>            gap: 4rem;</P>
+<P>            align-items: center;</P>
+<P>            position: relative;</P>
+<P>            z-index: 2;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-text h1 {</P>
+<P>            font-size: 3.5rem;</P>
+<P>            font-weight: 800;</P>
+<P>            color: white;</P>
+<P>            line-height: 1.1;</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>            animation: fadeInUp 0.8s ease;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-text h1 span {</P>
+<P>            color: var(--primary);</P>
+<P>            position: relative;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-text p {</P>
+<P>            font-size: 1.25rem;</P>
+<P>            color: #9ca3af;</P>
+<P>            margin-bottom: 2rem;</P>
+<P>            animation: fadeInUp 0.8s ease 0.2s both;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-buttons {</P>
+<P>            display: flex;</P>
+<P>            gap: 1rem;</P>
+<P>            animation: fadeInUp 0.8s ease 0.4s both;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-primary {</P>
+<P>            background: var(--gradient);</P>
+<P>            color: white;</P>
+<P>            padding: 1rem 2rem;</P>
+<P>            border-radius: 50px;</P>
+<P>            text-decoration: none;</P>
+<P>            font-weight: 700;</P>
+<P>            display: inline-flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 0.5rem;</P>
+<P>            transition: all 0.3s;</P>
+<P>            border: none;</P>
+<P>            cursor: pointer;</P>
+<P>            font-size: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-primary:hover {</P>
+<P>            transform: translateY(-3px);</P>
+<P>            box-shadow: 0 15px 35px rgba(220,38,38,0.4);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-secondary {</P>
+<P>            background: transparent;</P>
+<P>            color: white;</P>
+<P>            padding: 1rem 2rem;</P>
+<P>            border-radius: 50px;</P>
+<P>            text-decoration: none;</P>
+<P>            font-weight: 700;</P>
+<P>            border: 2px solid rgba(255,255,255,0.3);</P>
+<P>            transition: all 0.3s;</P>
+<P>            display: inline-flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 0.5rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-secondary:hover {</P>
+<P>            background: white;</P>
+<P>            color: var(--dark);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-stats {</P>
+<P>            display: flex;</P>
+<P>            gap: 3rem;</P>
+<P>            margin-top: 3rem;</P>
+<P>            padding-top: 2rem;</P>
+<P>            border-top: 1px solid rgba(255,255,255,0.1);</P>
+<P>            animation: fadeInUp 0.8s ease 0.6s both;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .stat {</P>
+<P>            text-align: center;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .stat-number {</P>
+<P>            font-size: 2.5rem;</P>
+<P>            font-weight: 800;</P>
+<P>            color: var(--primary);</P>
+<P>            display: block;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .stat-label {</P>
+<P>            color: #9ca3af;</P>
+<P>            font-size: 0.9rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-image {</P>
+<P>            position: relative;</P>
+<P>            animation: fadeIn 1s ease 0.5s both;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-image img {</P>
+<P>            width: 100%;</P>
+<P>            border-radius: 20px;</P>
+<P>            box-shadow: 0 30px 60px rgba(0,0,0,0.5);</P>
+<P>            transform: perspective(1000px) rotateY(-5deg);</P>
+<P>            transition: transform 0.5s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .hero-image:hover img {</P>
+<P>            transform: perspective(1000px) rotateY(0deg);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .floating-badge {</P>
+<P>            position: absolute;</P>
+<P>            background: white;</P>
+<P>            padding: 1rem 1.5rem;</P>
+<P>            border-radius: 15px;</P>
+<P>            box-shadow: 0 10px 30px rgba(0,0,0,0.2);</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 0.75rem;</P>
+<P>            animation: float 3s ease-in-out infinite;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .badge-1 {</P>
+<P>            top: -20px;</P>
+<P>            right: -20px;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .badge-2 {</P>
+<P>            bottom: 40px;</P>
+<P>            left: -30px;</P>
+<P>            animation-delay: 1.5s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .floating-badge i {</P>
+<P>            font-size: 1.5rem;</P>
+<P>            color: var(--primary);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Features Bar */</P>
+<P>        .features-bar {</P>
+<P>            background: white;</P>
+<P>            padding: 2rem 0;</P>
+<P>            box-shadow: 0 -10px 40px rgba(0,0,0,0.1);</P>
+<P>            position: relative;</P>
+<P>            z-index: 10;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .features-grid {</P>
+<P>            max-width: 1200px;</P>
+<P>            margin: 0 auto;</P>
+<P>            padding: 0 2rem;</P>
+<P>            display: grid;</P>
+<P>            grid-template-columns: repeat(4, 1fr);</P>
+<P>            gap: 2rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .feature-item {</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 1rem;</P>
+<P>            padding: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .feature-icon {</P>
+<P>            width: 50px;</P>
+<P>            height: 50px;</P>
+<P>            background: var(--light);</P>
+<P>            border-radius: 12px;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            justify-content: center;</P>
+<P>            color: var(--primary);</P>
+<P>            font-size: 1.25rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .feature-text h4 {</P>
+<P>            font-weight: 700;</P>
+<P>            color: var(--dark);</P>
+<P>            margin-bottom: 0.25rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .feature-text p {</P>
+<P>            font-size: 0.875rem;</P>
+<P>            color: #6b7280;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Servicios Mejorados */</P>
+<P>        .services {</P>
+<P>            padding: 6rem 0;</P>
+<P>            background: var(--light);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .container {</P>
+<P>            max-width: 1200px;</P>
+<P>            margin: 0 auto;</P>
+<P>            padding: 0 2rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .section-header {</P>
+<P>            text-align: center;</P>
+<P>            margin-bottom: 4rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .section-header h2 {</P>
+<P>            font-size: 2.5rem;</P>
+<P>            font-weight: 800;</P>
+<P>            color: var(--dark);</P>
+<P>            margin-bottom: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .section-header p {</P>
+<P>            color: #6b7280;</P>
+<P>            font-size: 1.125rem;</P>
+<P>            max-width: 600px;</P>
+<P>            margin: 0 auto;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .services-grid {</P>
+<P>            display: grid;</P>
+<P>            grid-template-columns: repeat(auto-fit, minmax(280px,
+1fr));</P>
+<P>            gap: 2rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-card {</P>
+<P>            background: white;</P>
+<P>            border-radius: 20px;</P>
+<P>            padding: 2.5rem;</P>
+<P>            transition: all 0.4s;</P>
+<P>            position: relative;</P>
+<P>            overflow: hidden;</P>
+<P>            border: 1px solid #e5e7eb;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-card::before {</P>
+<P>            content: '';</P>
+<P>            position: absolute;</P>
+<P>            top: 0;</P>
+<P>            left: 0;</P>
+<P>            width: 100%;</P>
+<P>            height: 5px;</P>
+<P>            background: var(--gradient);</P>
+<P>            transform: scaleX(0);</P>
+<P>            transition: transform 0.4s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-card:hover {</P>
+<P>            transform: translateY(-10px);</P>
+<P>            box-shadow: 0 20px 40px rgba(0,0,0,0.1);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-card:hover::before {</P>
+<P>            transform: scaleX(1);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-icon {</P>
+<P>            width: 70px;</P>
+<P>            height: 70px;</P>
+<P>            background: var(--light);</P>
+<P>            border-radius: 16px;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            justify-content: center;</P>
+<P>            font-size: 1.75rem;</P>
+<P>            color: var(--primary);</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>            transition: all 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-card:hover .service-icon {</P>
+<P>            background: var(--primary);</P>
+<P>            color: white;</P>
+<P>            transform: rotateY(360deg);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-card h3 {</P>
+<P>            font-size: 1.25rem;</P>
+<P>            font-weight: 700;</P>
+<P>            color: var(--dark);</P>
+<P>            margin-bottom: 0.75rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-card p {</P>
+<P>            color: #6b7280;</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>            line-height: 1.6;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-link {</P>
+<P>            color: var(--primary);</P>
+<P>            text-decoration: none;</P>
+<P>            font-weight: 600;</P>
+<P>            display: inline-flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 0.5rem;</P>
+<P>            transition: gap 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .service-link:hover {</P>
+<P>            gap: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Sobre Nosotros */</P>
+<P>        .about {</P>
+<P>            padding: 6rem 0;</P>
+<P>            background: white;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-grid {</P>
+<P>            display: grid;</P>
+<P>            grid-template-columns: 1fr 1fr;</P>
+<P>            gap: 4rem;</P>
+<P>            align-items: center;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-image {</P>
+<P>            position: relative;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-image img {</P>
+<P>            width: 100%;</P>
+<P>            border-radius: 20px;</P>
+<P>            box-shadow: 0 20px 40px rgba(0,0,0,0.1);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .experience-badge {</P>
+<P>            position: absolute;</P>
+<P>            bottom: -20px;</P>
+<P>            right: -20px;</P>
+<P>            background: var(--primary);</P>
+<P>            color: white;</P>
+<P>            padding: 2rem;</P>
+<P>            border-radius: 20px;</P>
+<P>            text-align: center;</P>
+<P>            box-shadow: 0 10px 30px rgba(220,38,38,0.3);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .experience-badge .years {</P>
+<P>            font-size: 3rem;</P>
+<P>            font-weight: 800;</P>
+<P>            display: block;</P>
+<P>            line-height: 1;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .experience-badge .text {</P>
+<P>            font-size: 0.875rem;</P>
+<P>            opacity: 0.9;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-content h2 {</P>
+<P>            font-size: 2.5rem;</P>
+<P>            font-weight: 800;</P>
+<P>            color: var(--dark);</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-content &gt; p {</P>
+<P>            color: #6b7280;</P>
+<P>            margin-bottom: 2rem;</P>
+<P>            font-size: 1.125rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-features {</P>
+<P>            display: grid;</P>
+<P>            grid-template-columns: 1fr 1fr;</P>
+<P>            gap: 1.5rem;</P>
+<P>            margin-bottom: 2rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-feature {</P>
+<P>            display: flex;</P>
+<P>            align-items: flex-start;</P>
+<P>            gap: 0.75rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-feature i {</P>
+<P>            color: var(--primary);</P>
+<P>            font-size: 1.25rem;</P>
+<P>            margin-top: 0.25rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-feature h4 {</P>
+<P>            font-weight: 700;</P>
+<P>            color: var(--dark);</P>
+<P>            margin-bottom: 0.25rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .about-feature p {</P>
+<P>            font-size: 0.875rem;</P>
+<P>            color: #6b7280;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Testimonios Mejorados */</P>
+<P>        .testimonials {</P>
+<P>            padding: 6rem 0;</P>
+<P>            background: linear-gradient(135deg, #1f2937 0%,
+#111827 100%);</P>
+<P>            color: white;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .testimonials .section-header h2,</P>
+<P>        .testimonials .section-header p {</P>
+<P>            color: white;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .testimonials-grid {</P>
+<P>            display: grid;</P>
+<P>            grid-template-columns: repeat(auto-fit, minmax(350px,
+1fr));</P>
+<P>            gap: 2rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .testimonial-card {</P>
+<P>            background: rgba(255,255,255,0.05);</P>
+<P>            backdrop-filter: blur(10px);</P>
+<P>            border: 1px solid rgba(255,255,255,0.1);</P>
+<P>            border-radius: 20px;</P>
+<P>            padding: 2.5rem;</P>
+<P>            position: relative;</P>
+<P>            transition: all 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .testimonial-card:hover {</P>
+<P>            transform: translateY(-5px);</P>
+<P>            background: rgba(255,255,255,0.1);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .testimonial-card::before {</P>
+<P>            content: '&quot;';</P>
+<P>            position: absolute;</P>
+<P>            top: 20px;</P>
+<P>            right: 30px;</P>
+<P>            font-size: 6rem;</P>
+<P>            color: var(--primary);</P>
+<P>            opacity: 0.3;</P>
+<P>            font-family: serif;</P>
+<P>            line-height: 1;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .stars {</P>
+<P>            color: var(--accent);</P>
+<P>            margin-bottom: 1rem;</P>
+<P>            font-size: 1.25rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .testimonial-text {</P>
+<P>            font-size: 1.125rem;</P>
+<P>            line-height: 1.8;</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>            color: #e5e7eb;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .testimonial-author {</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .author-avatar {</P>
+<P>            width: 50px;</P>
+<P>            height: 50px;</P>
+<P>            background: var(--primary);</P>
+<P>            border-radius: 50%;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            justify-content: center;</P>
+<P>            font-weight: 700;</P>
+<P>            color: white;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .author-info h4 {</P>
+<P>            font-weight: 700;</P>
+<P>            margin-bottom: 0.25rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .author-info p {</P>
+<P>            font-size: 0.875rem;</P>
+<P>            color: #9ca3af;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* CTA Section */</P>
+<P>        .cta-section {</P>
+<P>            padding: 6rem 0;</P>
+<P>            background: var(--primary);</P>
+<P>            position: relative;</P>
+<P>            overflow: hidden;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .cta-section::before {</P>
+<P>            content: '';</P>
+<P>            position: absolute;</P>
+<P>            top: -50%;</P>
+<P>            right: -10%;</P>
+<P>            width: 600px;</P>
+<P>            height: 600px;</P>
+<P>            background: rgba(255,255,255,0.1);</P>
+<P>            border-radius: 50%;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .cta-content {</P>
+<P>            max-width: 800px;</P>
+<P>            margin: 0 auto;</P>
+<P>            text-align: center;</P>
+<P>            position: relative;</P>
+<P>            z-index: 2;</P>
+<P>            color: white;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .cta-content h2 {</P>
+<P>            font-size: 3rem;</P>
+<P>            font-weight: 800;</P>
+<P>            margin-bottom: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .cta-content p {</P>
+<P>            font-size: 1.25rem;</P>
+<P>            opacity: 0.9;</P>
+<P>            margin-bottom: 2rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .cta-buttons {</P>
+<P>            display: flex;</P>
+<P>            gap: 1rem;</P>
+<P>            justify-content: center;</P>
+<P>            flex-wrap: wrap;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-white {</P>
+<P>            background: white;</P>
+<P>            color: var(--primary);</P>
+<P>            padding: 1rem 2.5rem;</P>
+<P>            border-radius: 50px;</P>
+<P>            text-decoration: none;</P>
+<P>            font-weight: 700;</P>
+<P>            transition: all 0.3s;</P>
+<P>            display: inline-flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 0.5rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-white:hover {</P>
+<P>            transform: translateY(-3px);</P>
+<P>            box-shadow: 0 10px 30px rgba(0,0,0,0.2);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-outline-white {</P>
+<P>            background: transparent;</P>
+<P>            color: white;</P>
+<P>            padding: 1rem 2.5rem;</P>
+<P>            border-radius: 50px;</P>
+<P>            text-decoration: none;</P>
+<P>            font-weight: 700;</P>
+<P>            border: 2px solid white;</P>
+<P>            transition: all 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .btn-outline-white:hover {</P>
+<P>            background: white;</P>
+<P>            color: var(--primary);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Footer Profesional */</P>
+<P>        footer {</P>
+<P>            background: var(--dark);</P>
+<P>            color: white;</P>
+<P>            padding: 4rem 0 2rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-grid {</P>
+<P>            display: grid;</P>
+<P>            grid-template-columns: 2fr 1fr 1fr 1fr;</P>
+<P>            gap: 3rem;</P>
+<P>            margin-bottom: 3rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-brand h3 {</P>
+<P>            font-size: 1.5rem;</P>
+<P>            font-weight: 800;</P>
+<P>            margin-bottom: 1rem;</P>
+<P>            color: var(--primary);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-brand p {</P>
+<P>            color: #9ca3af;</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>            line-height: 1.8;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .social-links {</P>
+<P>            display: flex;</P>
+<P>            gap: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .social-links a {</P>
+<P>            width: 40px;</P>
+<P>            height: 40px;</P>
+<P>            background: rgba(255,255,255,0.1);</P>
+<P>            border-radius: 50%;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            justify-content: center;</P>
+<P>            color: white;</P>
+<P>            text-decoration: none;</P>
+<P>            transition: all 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .social-links a:hover {</P>
+<P>            background: var(--primary);</P>
+<P>            transform: translateY(-3px);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-column h4 {</P>
+<P>            font-weight: 700;</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>            color: white;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-column ul {</P>
+<P>            list-style: none;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-column li {</P>
+<P>            margin-bottom: 0.75rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-column a {</P>
+<P>            color: #9ca3af;</P>
+<P>            text-decoration: none;</P>
+<P>            transition: color 0.3s;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            gap: 0.5rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-column a:hover {</P>
+<P>            color: var(--primary);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .contact-info li {</P>
+<P>            display: flex;</P>
+<P>            align-items: flex-start;</P>
+<P>            gap: 0.75rem;</P>
+<P>            color: #9ca3af;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .contact-info i {</P>
+<P>            color: var(--primary);</P>
+<P>            margin-top: 0.25rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .footer-bottom {</P>
+<P>            border-top: 1px solid #374151;</P>
+<P>            padding-top: 2rem;</P>
+<P>            display: flex;</P>
+<P>            justify-content: space-between;</P>
+<P>            align-items: center;</P>
+<P>            color: #6b7280;</P>
+<P>            font-size: 0.875rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Animaciones */</P>
+<P>        @keyframes fadeInUp {</P>
+<P>            from {</P>
+<P>                opacity: 0;</P>
+<P>                transform: translateY(30px);</P>
+<P>            }</P>
+<P>            to {</P>
+<P>                opacity: 1;</P>
+<P>                transform: translateY(0);</P>
+<P>            }</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        @keyframes fadeIn {</P>
+<P>            from { opacity: 0; }</P>
+<P>            to { opacity: 1; }</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        @keyframes float {</P>
+<P>            0%, 100% { transform: translateY(0); }</P>
+<P>            50% { transform: translateY(-10px); }</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Scroll Reveal */</P>
+<P>        .reveal {</P>
+<P>            opacity: 0;</P>
+<P>            transform: translateY(30px);</P>
+<P>            transition: all 0.8s ease;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .reveal.active {</P>
+<P>            opacity: 1;</P>
+<P>            transform: translateY(0);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Mobile Menu */</P>
+<P>        .mobile-menu-btn {</P>
+<P>            display: none;</P>
+<P>            background: none;</P>
+<P>            border: none;</P>
+<P>            font-size: 1.5rem;</P>
+<P>            color: var(--dark);</P>
+<P>            cursor: pointer;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Responsive */</P>
+<P>        @media (max-width: 968px) {</P>
+<P>            .nav-links, .cta-header {</P>
+<P>                display: none;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .mobile-menu-btn {</P>
+<P>                display: block;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .hero-content {</P>
+<P>                grid-template-columns: 1fr;</P>
+<P>                text-align: center;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .hero-text h1 {</P>
+<P>                font-size: 2.5rem;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .hero-image {</P>
+<P>                order: -1;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .hero-stats {</P>
+<P>                justify-content: center;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .features-grid {</P>
+<P>                grid-template-columns: repeat(2, 1fr);</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .about-grid {</P>
+<P>                grid-template-columns: 1fr;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .footer-grid {</P>
+<P>                grid-template-columns: 1fr 1fr;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .cta-content h2 {</P>
+<P>                font-size: 2rem;</P>
+<P>            }</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        @media (max-width: 640px) {</P>
+<P>            .hero-text h1 {</P>
+<P>                font-size: 2rem;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .hero-buttons {</P>
+<P>                flex-direction: column;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .features-grid {</P>
+<P>                grid-template-columns: 1fr;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .about-features {</P>
+<P>                grid-template-columns: 1fr;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .footer-grid {</P>
+<P>                grid-template-columns: 1fr;</P>
+<P>            }</P>
+<P><BR><BR>
+</P>
+<P>            .footer-bottom {</P>
+<P>                flex-direction: column;</P>
+<P>                gap: 1rem;</P>
+<P>                text-align: center;</P>
+<P>            }</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* WhatsApp Float */</P>
+<P>        .whatsapp-float {</P>
+<P>            position: fixed;</P>
+<P>            bottom: 30px;</P>
+<P>            right: 30px;</P>
+<P>            background: #25d366;</P>
+<P>            color: white;</P>
+<P>            width: 60px;</P>
+<P>            height: 60px;</P>
+<P>            border-radius: 50%;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            justify-content: center;</P>
+<P>            font-size: 1.75rem;</P>
+<P>            box-shadow: 0 10px 30px rgba(37,211,102,0.3);</P>
+<P>            cursor: pointer;</P>
+<P>            transition: all 0.3s;</P>
+<P>            z-index: 999;</P>
+<P>            text-decoration: none;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .whatsapp-float:hover {</P>
+<P>            transform: scale(1.1) rotate(10deg);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        /* Formulario de Contacto Modal */</P>
+<P>        .modal {</P>
+<P>            display: none;</P>
+<P>            position: fixed;</P>
+<P>            top: 0;</P>
+<P>            left: 0;</P>
+<P>            width: 100%;</P>
+<P>            height: 100%;</P>
+<P>            background: rgba(0,0,0,0.8);</P>
+<P>            z-index: 2000;</P>
+<P>            align-items: center;</P>
+<P>            justify-content: center;</P>
+<P>            backdrop-filter: blur(5px);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .modal.active {</P>
+<P>            display: flex;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .modal-content {</P>
+<P>            background: white;</P>
+<P>            border-radius: 20px;</P>
+<P>            padding: 2.5rem;</P>
+<P>            max-width: 500px;</P>
+<P>            width: 90%;</P>
+<P>            position: relative;</P>
+<P>            animation: modalIn 0.3s ease;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        @keyframes modalIn {</P>
+<P>            from {</P>
+<P>                opacity: 0;</P>
+<P>                transform: scale(0.9);</P>
+<P>            }</P>
+<P>            to {</P>
+<P>                opacity: 1;</P>
+<P>                transform: scale(1);</P>
+<P>            }</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .modal-close {</P>
+<P>            position: absolute;</P>
+<P>            top: 1rem;</P>
+<P>            right: 1rem;</P>
+<P>            background: none;</P>
+<P>            border: none;</P>
+<P>            font-size: 1.5rem;</P>
+<P>            cursor: pointer;</P>
+<P>            color: #6b7280;</P>
+<P>            width: 40px;</P>
+<P>            height: 40px;</P>
+<P>            border-radius: 50%;</P>
+<P>            display: flex;</P>
+<P>            align-items: center;</P>
+<P>            justify-content: center;</P>
+<P>            transition: all 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .modal-close:hover {</P>
+<P>            background: var(--light);</P>
+<P>            color: var(--dark);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .modal h3 {</P>
+<P>            font-size: 1.5rem;</P>
+<P>            font-weight: 700;</P>
+<P>            margin-bottom: 0.5rem;</P>
+<P>            color: var(--dark);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .modal p {</P>
+<P>            color: #6b7280;</P>
+<P>            margin-bottom: 1.5rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .form-group {</P>
+<P>            margin-bottom: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .form-group label {</P>
+<P>            display: block;</P>
+<P>            margin-bottom: 0.5rem;</P>
+<P>            font-weight: 600;</P>
+<P>            color: var(--dark);</P>
+<P>            font-size: 0.875rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .form-group input,</P>
+<P>        .form-group textarea,</P>
+<P>        .form-group select {</P>
+<P>            width: 100%;</P>
+<P>            padding: 0.75rem 1rem;</P>
+<P>            border: 2px solid #e5e7eb;</P>
+<P>            border-radius: 10px;</P>
+<P>            font-family: inherit;</P>
+<P>            transition: border-color 0.3s;</P>
+<P>            font-size: 1rem;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .form-group input:focus,</P>
+<P>        .form-group textarea:focus,</P>
+<P>        .form-group select:focus {</P>
+<P>            outline: none;</P>
+<P>            border-color: var(--primary);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .form-group textarea {</P>
+<P>            resize: vertical;</P>
+<P>            min-height: 100px;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .submit-btn {</P>
+<P>            width: 100%;</P>
+<P>            background: var(--gradient);</P>
+<P>            color: white;</P>
+<P>            border: none;</P>
+<P>            padding: 1rem;</P>
+<P>            border-radius: 10px;</P>
+<P>            font-weight: 700;</P>
+<P>            font-size: 1rem;</P>
+<P>            cursor: pointer;</P>
+<P>            transition: all 0.3s;</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        .submit-btn:hover {</P>
+<P>            transform: translateY(-2px);</P>
+<P>            box-shadow: 0 10px 25px rgba(220,38,38,0.3);</P>
+<P>        }</P>
+<P>    &lt;/style&gt;</P>
+<P>&lt;/head&gt;</P>
+<P>&lt;body&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Header --&gt;</P>
+<P>    &lt;header id=&quot;header&quot;&gt;</P>
+<P>        &lt;nav&gt;</P>
+<P>            &lt;a href=&quot;#&quot; class=&quot;logo&quot;&gt;</P>
+<P>                &lt;i class=&quot;fas fa-car-crash&quot;&gt;&lt;/i&gt;</P>
+<P>                CarBrake</P>
+<P>            &lt;/a&gt;</P>
+<P>            &lt;ul class=&quot;nav-links&quot;&gt;</P>
+<P>                &lt;li&gt;&lt;a href=&quot;#inicio&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;</P>
+<P>                &lt;li&gt;&lt;a
+href=&quot;#servicios&quot;&gt;Servicios&lt;/a&gt;&lt;/li&gt;</P>
+<P>                &lt;li&gt;&lt;a href=&quot;#nosotros&quot;&gt;Nosotros&lt;/a&gt;&lt;/li&gt;</P>
+<P>                &lt;li&gt;&lt;a
+href=&quot;#testimonios&quot;&gt;Testimonios&lt;/a&gt;&lt;/li&gt;</P>
+<P>                &lt;li&gt;&lt;a href=&quot;#contacto&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;</P>
+<P>            &lt;/ul&gt;</P>
+<P>            &lt;a href=&quot;#&quot; class=&quot;cta-header&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                &lt;i class=&quot;fas fa-calendar-check&quot;&gt;&lt;/i&gt;
+Agendar Cita</P>
+<P>            &lt;/a&gt;</P>
+<P>            &lt;button class=&quot;mobile-menu-btn&quot;
+onclick=&quot;toggleMobileMenu()&quot;&gt;</P>
+<P>                &lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;</P>
+<P>            &lt;/button&gt;</P>
+<P>        &lt;/nav&gt;</P>
+<P>    &lt;/header&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Hero Section --&gt;</P>
+<P>    &lt;section class=&quot;hero&quot; id=&quot;inicio&quot;&gt;</P>
+<P>        &lt;div class=&quot;hero-content&quot;&gt;</P>
+<P>            &lt;div class=&quot;hero-text&quot;&gt;</P>
+<P>                &lt;h1&gt;Seguridad en cada frenada
+&lt;span&gt;garantizada&lt;/span&gt;&lt;/h1&gt;</P>
+<P>                &lt;p&gt;Especialistas en frenos y suspensi&oacute;n
+para veh&iacute;culos de combusti&oacute;n, h&iacute;bridos y
+el&eacute;ctricos. Diagn&oacute;stico computarizado y repuestos de
+calidad.&lt;/p&gt;</P>
+<P>                &lt;div class=&quot;hero-buttons&quot;&gt;</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;btn-primary&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-wrench&quot;&gt;&lt;/i&gt;
+Agendar Servicio</P>
+<P>                    &lt;/a&gt;</P>
+<P>                    &lt;a href=&quot;tel:+1234567890&quot;
+class=&quot;btn-secondary&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt;
+Llamar Ahora</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;hero-stats&quot;&gt;</P>
+<P>                    &lt;div class=&quot;stat&quot;&gt;</P>
+<P>                        &lt;span class=&quot;stat-number&quot;&gt;15+&lt;/span&gt;</P>
+<P>                        &lt;span class=&quot;stat-label&quot;&gt;A&ntilde;os
+de Experiencia&lt;/span&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;div class=&quot;stat&quot;&gt;</P>
+<P>                        &lt;span class=&quot;stat-number&quot;&gt;10k+&lt;/span&gt;</P>
+<P>                        &lt;span class=&quot;stat-label&quot;&gt;Clientes
+Satisfechos&lt;/span&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;div class=&quot;stat&quot;&gt;</P>
+<P>                        &lt;span class=&quot;stat-number&quot;&gt;24h&lt;/span&gt;</P>
+<P>                        &lt;span class=&quot;stat-label&quot;&gt;Servicio
+Express&lt;/span&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>            &lt;div class=&quot;hero-image&quot;&gt;</P>
+<P>                &lt;img
+src=&quot;https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&amp;auto=format&amp;fit=crop&quot;
+alt=&quot;Mec&aacute;nico trabajando en frenos&quot;&gt;</P>
+<P>                &lt;div class=&quot;floating-badge badge-1&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-shield-alt&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;div&gt;</P>
+<P>                        &lt;strong&gt;Garant&iacute;a&lt;/strong&gt;</P>
+<P>                        &lt;small&gt;6 meses&lt;/small&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;floating-badge badge-2&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-clock&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;div&gt;</P>
+<P>                        &lt;strong&gt;Servicio&lt;/strong&gt;</P>
+<P>                        &lt;small&gt;Express&lt;/small&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/section&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Features Bar --&gt;</P>
+<P>    &lt;div class=&quot;features-bar&quot;&gt;</P>
+<P>        &lt;div class=&quot;features-grid&quot;&gt;</P>
+<P>            &lt;div class=&quot;feature-item&quot;&gt;</P>
+<P>                &lt;div class=&quot;feature-icon&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;feature-text&quot;&gt;</P>
+<P>                    &lt;h4&gt;Diagn&oacute;stico Gratis&lt;/h4&gt;</P>
+<P>                    &lt;p&gt;Evaluaci&oacute;n sin costo&lt;/p&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>            &lt;div class=&quot;feature-item&quot;&gt;</P>
+<P>                &lt;div class=&quot;feature-icon&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-certificate&quot;&gt;&lt;/i&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;feature-text&quot;&gt;</P>
+<P>                    &lt;h4&gt;Repuestos Originales&lt;/h4&gt;</P>
+<P>                    &lt;p&gt;Calidad garantizada&lt;/p&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>            &lt;div class=&quot;feature-item&quot;&gt;</P>
+<P>                &lt;div class=&quot;feature-icon&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-tools&quot;&gt;&lt;/i&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;feature-text&quot;&gt;</P>
+<P>                    &lt;h4&gt;T&eacute;cnicos Certificados&lt;/h4&gt;</P>
+<P>                    &lt;p&gt;Personal especializado&lt;/p&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>            &lt;div class=&quot;feature-item&quot;&gt;</P>
+<P>                &lt;div class=&quot;feature-icon&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-dollar-sign&quot;&gt;&lt;/i&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;feature-text&quot;&gt;</P>
+<P>                    &lt;h4&gt;Precios Justos&lt;/h4&gt;</P>
+<P>                    &lt;p&gt;Sin costos ocultos&lt;/p&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/div&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Servicios --&gt;</P>
+<P>    &lt;section class=&quot;services&quot; id=&quot;servicios&quot;&gt;</P>
+<P>        &lt;div class=&quot;container&quot;&gt;</P>
+<P>            &lt;div class=&quot;section-header reveal&quot;&gt;</P>
+<P>                &lt;h2&gt;Nuestros Servicios Especializados&lt;/h2&gt;</P>
+<P>                &lt;p&gt;Ofrecemos soluciones completas para el
+sistema de frenado y suspensi&oacute;n de tu veh&iacute;culo con
+tecnolog&iacute;a de punta.&lt;/p&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>            &lt;div class=&quot;services-grid&quot;&gt;</P>
+<P>                &lt;div class=&quot;service-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;service-icon&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-car-crash&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;h3&gt;Reparaci&oacute;n de Frenos&lt;/h3&gt;</P>
+<P>                    &lt;p&gt;Servicio completo de frenos: discos,
+balatas, tambores, l&iacute;quido de frenos y m&aacute;s. Usamos
+equipos de diagn&oacute;stico computarizado.&lt;/p&gt;</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;service-link&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        Solicitar servicio &lt;i class=&quot;fas
+fa-arrow-right&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;service-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;service-icon&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas
+fa-compress-arrows-alt&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;h3&gt;Suspensi&oacute;n y Direcci&oacute;n&lt;/h3&gt;</P>
+<P>                    &lt;p&gt;Amortiguadores, resortes, bujes y
+sistema de direcci&oacute;n. Aseguramos estabilidad y confort en tu
+conducci&oacute;n.&lt;/p&gt;</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;service-link&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        Solicitar servicio &lt;i class=&quot;fas
+fa-arrow-right&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;service-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;service-icon&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-stethoscope&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;h3&gt;Diagn&oacute;stico
+Computarizado&lt;/h3&gt;</P>
+<P>                    &lt;p&gt;Escaneo completo del veh&iacute;culo
+para detectar fallas electr&oacute;nicas y mec&aacute;nicas con
+equipos de &uacute;ltima generaci&oacute;n.&lt;/p&gt;</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;service-link&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        Solicitar servicio &lt;i class=&quot;fas
+fa-arrow-right&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;service-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;service-icon&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-oil-can&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;h3&gt;Mantenimiento General&lt;/h3&gt;</P>
+<P>                    &lt;p&gt;Afinaci&oacute;n, cambio de aceite,
+filtros, buj&iacute;as y revisi&oacute;n de sistemas. Mantenimiento
+preventivo completo.&lt;/p&gt;</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;service-link&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        Solicitar servicio &lt;i class=&quot;fas
+fa-arrow-right&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;service-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;service-icon&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas
+fa-charging-station&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;h3&gt;Veh&iacute;culos H&iacute;bridos y
+El&eacute;ctricos&lt;/h3&gt;</P>
+<P>                    &lt;p&gt;T&eacute;cnicos especializados en
+sistemas de frenado regenerativo y mantenimiento de veh&iacute;culos
+eco-friendly.&lt;/p&gt;</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;service-link&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        Solicitar servicio &lt;i class=&quot;fas
+fa-arrow-right&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;service-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;service-icon&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-sync-alt&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;h3&gt;Alineaci&oacute;n y Balanceo&lt;/h3&gt;</P>
+<P>                    &lt;p&gt;Correcci&oacute;n de geometr&iacute;a
+y balanceo computarizado para prolongar la vida de tus llantas y
+mejorar seguridad.&lt;/p&gt;</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;service-link&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        Solicitar servicio &lt;i class=&quot;fas
+fa-arrow-right&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/section&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Sobre Nosotros --&gt;</P>
+<P>    &lt;section class=&quot;about&quot; id=&quot;nosotros&quot;&gt;</P>
+<P>        &lt;div class=&quot;container&quot;&gt;</P>
+<P>            &lt;div class=&quot;about-grid&quot;&gt;</P>
+<P>                &lt;div class=&quot;about-image reveal&quot;&gt;</P>
+<P>                    &lt;img
+src=&quot;https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=800&amp;auto=format&amp;fit=crop&quot;
+alt=&quot;Taller mec&aacute;nico profesional&quot;&gt;</P>
+<P>                    &lt;div class=&quot;experience-badge&quot;&gt;</P>
+<P>                        &lt;span class=&quot;years&quot;&gt;15+&lt;/span&gt;</P>
+<P>                        &lt;span class=&quot;text&quot;&gt;A&ntilde;os
+de&lt;br&gt;Experiencia&lt;/span&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;about-content reveal&quot;&gt;</P>
+<P>                    &lt;h2&gt;Expertos en seguridad vehicular
+desde 2009&lt;/h2&gt;</P>
+<P>                    &lt;p&gt;En CarBrake Shop nos especializamos
+en sistemas de frenado y suspensi&oacute;n. Nuestro compromiso es
+brindarte seguridad en cada kil&oacute;metro con servicio profesional
+y repuestos de calidad certificada.&lt;/p&gt;</P>
+<P>                    
+</P>
+<P>                    &lt;div class=&quot;about-features&quot;&gt;</P>
+<P>                        &lt;div class=&quot;about-feature&quot;&gt;</P>
+<P>                            &lt;i class=&quot;fas
+fa-check-circle&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;div&gt;</P>
+<P>                                &lt;h4&gt;Tecnolog&iacute;a
+Avanzada&lt;/h4&gt;</P>
+<P>                                &lt;p&gt;Equipos de diagn&oacute;stico
+de &uacute;ltima generaci&oacute;n&lt;/p&gt;</P>
+<P>                            &lt;/div&gt;</P>
+<P>                        &lt;/div&gt;</P>
+<P>                        &lt;div class=&quot;about-feature&quot;&gt;</P>
+<P>                            &lt;i class=&quot;fas
+fa-user-tie&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;div&gt;</P>
+<P>                                &lt;h4&gt;Personal
+Certificado&lt;/h4&gt;</P>
+<P>                                &lt;p&gt;T&eacute;cnicos con
+constante capacitaci&oacute;n&lt;/p&gt;</P>
+<P>                            &lt;/div&gt;</P>
+<P>                        &lt;/div&gt;</P>
+<P>                        &lt;div class=&quot;about-feature&quot;&gt;</P>
+<P>                            &lt;i class=&quot;fas
+fa-handshake&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;div&gt;</P>
+<P>                                &lt;h4&gt;Atenci&oacute;n
+Personalizada&lt;/h4&gt;</P>
+<P>                                &lt;p&gt;Asesor&iacute;a t&eacute;cnica
+transparente&lt;/p&gt;</P>
+<P>                            &lt;/div&gt;</P>
+<P>                        &lt;/div&gt;</P>
+<P>                        &lt;div class=&quot;about-feature&quot;&gt;</P>
+<P>                            &lt;i class=&quot;fas fa-award&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;div&gt;</P>
+<P>                                &lt;h4&gt;Garant&iacute;a
+Real&lt;/h4&gt;</P>
+<P>                                &lt;p&gt;6 meses en mano de obra y
+repuestos&lt;/p&gt;</P>
+<P>                            &lt;/div&gt;</P>
+<P>                        &lt;/div&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P><BR><BR>
+</P>
+<P>                    &lt;a href=&quot;#&quot; class=&quot;btn-primary&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas
+fa-calendar-alt&quot;&gt;&lt;/i&gt; Agenda tu cita de diagn&oacute;stico</P>
+<P>                    &lt;/a&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/section&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Testimonios --&gt;</P>
+<P>    &lt;section class=&quot;testimonials&quot; id=&quot;testimonios&quot;&gt;</P>
+<P>        &lt;div class=&quot;container&quot;&gt;</P>
+<P>            &lt;div class=&quot;section-header reveal&quot;&gt;</P>
+<P>                &lt;h2&gt;Lo que dicen nuestros clientes&lt;/h2&gt;</P>
+<P>                &lt;p&gt;Miles de conductores conf&iacute;an en
+nosotros para mantener sus veh&iacute;culos seguros.&lt;/p&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>            &lt;div class=&quot;testimonials-grid&quot;&gt;</P>
+<P>                &lt;div class=&quot;testimonial-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;stars&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;p class=&quot;testimonial-text&quot;&gt;&quot;Excelente
+servicio, me ayudaron con los frenos de mi carro muy r&aacute;pido.
+El diagn&oacute;stico fue preciso y el precio justo. Totalmente
+recomendados.&quot;&lt;/p&gt;</P>
+<P>                    &lt;div class=&quot;testimonial-author&quot;&gt;</P>
+<P>                        &lt;div class=&quot;author-avatar&quot;&gt;JL&lt;/div&gt;</P>
+<P>                        &lt;div class=&quot;author-info&quot;&gt;</P>
+<P>                            &lt;h4&gt;Juana Loya&lt;/h4&gt;</P>
+<P>                            &lt;p&gt;Cliente desde 2022&lt;/p&gt;</P>
+<P>                        &lt;/div&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;testimonial-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;stars&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;p class=&quot;testimonial-text&quot;&gt;&quot;La
+atenci&oacute;n fue excepcional, me sent&iacute; seguro y satisfecho
+con el trabajo realizado. Explicaron todo el proceso y usaron
+repuestos originales.&quot;&lt;/p&gt;</P>
+<P>                    &lt;div class=&quot;testimonial-author&quot;&gt;</P>
+<P>                        &lt;div class=&quot;author-avatar&quot;&gt;RR&lt;/div&gt;</P>
+<P>                        &lt;div class=&quot;author-info&quot;&gt;</P>
+<P>                            &lt;h4&gt;Ren&eacute; Rasc&oacute;n&lt;/h4&gt;</P>
+<P>                            &lt;p&gt;Cliente desde 2023&lt;/p&gt;</P>
+<P>                        &lt;/div&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;testimonial-card reveal&quot;&gt;</P>
+<P>                    &lt;div class=&quot;stars&quot;&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                        &lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                    &lt;p class=&quot;testimonial-text&quot;&gt;&quot;Llev&eacute;
+mi Tesla Model 3 para revisi&oacute;n de frenos y qued&eacute;
+impresionado con el conocimiento que tienen de veh&iacute;culos
+el&eacute;ctricos. Servicio de primera.&quot;&lt;/p&gt;</P>
+<P>                    &lt;div class=&quot;testimonial-author&quot;&gt;</P>
+<P>                        &lt;div class=&quot;author-avatar&quot;&gt;CM&lt;/div&gt;</P>
+<P>                        &lt;div class=&quot;author-info&quot;&gt;</P>
+<P>                            &lt;h4&gt;Carlos M&eacute;ndez&lt;/h4&gt;</P>
+<P>                            &lt;p&gt;Cliente desde 2024&lt;/p&gt;</P>
+<P>                        &lt;/div&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/section&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- CTA Section --&gt;</P>
+<P>    &lt;section class=&quot;cta-section&quot; id=&quot;contacto&quot;&gt;</P>
+<P>        &lt;div class=&quot;cta-content reveal&quot;&gt;</P>
+<P>            &lt;h2&gt;&iquest;Listo para poner tu seguridad en
+primer lugar?&lt;/h2&gt;</P>
+<P>            &lt;p&gt;Agenda tu cita hoy y recibe un diagn&oacute;stico
+computarizado gratuito. Tu seguridad no puede esperar.&lt;/p&gt;</P>
+<P>            &lt;div class=&quot;cta-buttons&quot;&gt;</P>
+<P>                &lt;a href=&quot;#&quot; class=&quot;btn-white&quot;
+onclick=&quot;openModal()&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fab fa-whatsapp&quot;&gt;&lt;/i&gt;
+Agendar por WhatsApp</P>
+<P>                &lt;/a&gt;</P>
+<P>                &lt;a href=&quot;tel:+1234567890&quot;
+class=&quot;btn-outline-white&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-phone-alt&quot;&gt;&lt;/i&gt;
+Llamar ahora</P>
+<P>                &lt;/a&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/section&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Footer --&gt;</P>
+<P>    &lt;footer&gt;</P>
+<P>        &lt;div class=&quot;container&quot;&gt;</P>
+<P>            &lt;div class=&quot;footer-grid&quot;&gt;</P>
+<P>                &lt;div class=&quot;footer-brand&quot;&gt;</P>
+<P>                    &lt;h3&gt;&lt;i class=&quot;fas
+fa-car-crash&quot;&gt;&lt;/i&gt; CarBrake Shop&lt;/h3&gt;</P>
+<P>                    &lt;p&gt;Especialistas en frenos y suspensi&oacute;n
+desde 2009. Comprometidos con tu seguridad y la de tu familia en cada
+kil&oacute;metro.&lt;/p&gt;</P>
+<P>                    &lt;div class=&quot;social-links&quot;&gt;</P>
+<P>                        &lt;a href=&quot;#&quot;&gt;&lt;i
+class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;</P>
+<P>                        &lt;a href=&quot;#&quot;&gt;&lt;i
+class=&quot;fab fa-instagram&quot;&gt;&lt;/i&gt;&lt;/a&gt;</P>
+<P>                        &lt;a href=&quot;#&quot;&gt;&lt;i
+class=&quot;fab fa-whatsapp&quot;&gt;&lt;/i&gt;&lt;/a&gt;</P>
+<P>                        &lt;a href=&quot;#&quot;&gt;&lt;i
+class=&quot;fab fa-google&quot;&gt;&lt;/i&gt;&lt;/a&gt;</P>
+<P>                    &lt;/div&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;footer-column&quot;&gt;</P>
+<P>                    &lt;h4&gt;Servicios&lt;/h4&gt;</P>
+<P>                    &lt;ul&gt;</P>
+<P>                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Frenos
+y Discos&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#&quot;&gt;Suspensi&oacute;n&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#&quot;&gt;Alineaci&oacute;n&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#&quot;&gt;Diagn&oacute;stico&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#&quot;&gt;Mantenimiento&lt;/a&gt;&lt;/li&gt;</P>
+<P>                    &lt;/ul&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;footer-column&quot;&gt;</P>
+<P>                    &lt;h4&gt;Enlaces&lt;/h4&gt;</P>
+<P>                    &lt;ul&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#inicio&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#nosotros&quot;&gt;Nosotros&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#servicios&quot;&gt;Servicios&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a
+href=&quot;#testimonios&quot;&gt;Testimonios&lt;/a&gt;&lt;/li&gt;</P>
+<P>                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;</P>
+<P>                    &lt;/ul&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;footer-column&quot;&gt;</P>
+<P>                    &lt;h4&gt;Contacto&lt;/h4&gt;</P>
+<P>                    &lt;ul class=&quot;contact-info&quot;&gt;</P>
+<P>                        &lt;li&gt;</P>
+<P>                            &lt;i class=&quot;fas
+fa-map-marker-alt&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;span&gt;Av. Principal #123&lt;br&gt;Col.
+Centro, Ciudad&lt;/span&gt;</P>
+<P>                        &lt;/li&gt;</P>
+<P>                        &lt;li&gt;</P>
+<P>                            &lt;i class=&quot;fas fa-phone&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;span&gt;(123) 456-7890&lt;/span&gt;</P>
+<P>                        &lt;/li&gt;</P>
+<P>                        &lt;li&gt;</P>
+<P>                            &lt;i class=&quot;fas
+fa-envelope&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;span&gt;contacto@carbrakeshop.com&lt;/span&gt;</P>
+<P>                        &lt;/li&gt;</P>
+<P>                        &lt;li&gt;</P>
+<P>                            &lt;i class=&quot;fas fa-clock&quot;&gt;&lt;/i&gt;</P>
+<P>                            &lt;span&gt;Lun-Vie: 8:00 -
+18:00&lt;br&gt;S&aacute;b: 9:00 - 14:00&lt;/span&gt;</P>
+<P>                        &lt;/li&gt;</P>
+<P>                    &lt;/ul&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>            &lt;div class=&quot;footer-bottom&quot;&gt;</P>
+<P>                &lt;p&gt;&amp;copy; 2024 CarBrake Shop. Todos los
+derechos reservados.&lt;/p&gt;</P>
+<P>                &lt;p&gt;Dise&ntilde;ado con &lt;i class=&quot;fas
+fa-heart&quot; style=&quot;color: var(--primary);&quot;&gt;&lt;/i&gt;
+para tu seguridad&lt;/p&gt;</P>
+<P>            &lt;/div&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/footer&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- WhatsApp Float --&gt;</P>
+<P>    &lt;a href=&quot;https://wa.me/1234567890&quot;
+class=&quot;whatsapp-float&quot; target=&quot;_blank&quot;&gt;</P>
+<P>        &lt;i class=&quot;fab fa-whatsapp&quot;&gt;&lt;/i&gt;</P>
+<P>    &lt;/a&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;!-- Modal de Contacto --&gt;</P>
+<P>    &lt;div class=&quot;modal&quot; id=&quot;contactModal&quot;&gt;</P>
+<P>        &lt;div class=&quot;modal-content&quot;&gt;</P>
+<P>            &lt;button class=&quot;modal-close&quot;
+onclick=&quot;closeModal()&quot;&gt;</P>
+<P>                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;</P>
+<P>            &lt;/button&gt;</P>
+<P>            &lt;h3&gt;Agenda tu cita&lt;/h3&gt;</P>
+<P>            &lt;p&gt;D&eacute;janos tus datos y nos pondremos en
+contacto contigo en menos de 30 minutos.&lt;/p&gt;</P>
+<P>            &lt;form onsubmit=&quot;handleSubmit(event)&quot;&gt;</P>
+<P>                &lt;div class=&quot;form-group&quot;&gt;</P>
+<P>                    &lt;label&gt;Nombre completo&lt;/label&gt;</P>
+<P>                    &lt;input type=&quot;text&quot;
+placeholder=&quot;Tu nombre&quot; required&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;form-group&quot;&gt;</P>
+<P>                    &lt;label&gt;Tel&eacute;fono&lt;/label&gt;</P>
+<P>                    &lt;input type=&quot;tel&quot; placeholder=&quot;Tu
+n&uacute;mero de contacto&quot; required&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;form-group&quot;&gt;</P>
+<P>                    &lt;label&gt;Tipo de servicio&lt;/label&gt;</P>
+<P>                    &lt;select required&gt;</P>
+<P>                        &lt;option value=&quot;&quot;&gt;Selecciona
+un servicio&lt;/option&gt;</P>
+<P>                        &lt;option value=&quot;frenos&quot;&gt;Reparaci&oacute;n
+de Frenos&lt;/option&gt;</P>
+<P>                        &lt;option
+value=&quot;suspension&quot;&gt;Suspensi&oacute;n&lt;/option&gt;</P>
+<P>                        &lt;option
+value=&quot;diagnostico&quot;&gt;Diagn&oacute;stico&lt;/option&gt;</P>
+<P>                        &lt;option
+value=&quot;mantenimiento&quot;&gt;Mantenimiento General&lt;/option&gt;</P>
+<P>                        &lt;option value=&quot;otro&quot;&gt;Otro&lt;/option&gt;</P>
+<P>                    &lt;/select&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;div class=&quot;form-group&quot;&gt;</P>
+<P>                    &lt;label&gt;Mensaje (opcional)&lt;/label&gt;</P>
+<P>                    &lt;textarea placeholder=&quot;Cu&eacute;ntanos
+m&aacute;s sobre tu veh&iacute;culo...&quot;&gt;&lt;/textarea&gt;</P>
+<P>                &lt;/div&gt;</P>
+<P>                &lt;button type=&quot;submit&quot;
+class=&quot;submit-btn&quot;&gt;</P>
+<P>                    &lt;i class=&quot;fas fa-paper-plane&quot;&gt;&lt;/i&gt;
+Enviar solicitud</P>
+<P>                &lt;/button&gt;</P>
+<P>            &lt;/form&gt;</P>
+<P>        &lt;/div&gt;</P>
+<P>    &lt;/div&gt;</P>
+<P><BR><BR>
+</P>
+<P>    &lt;script&gt;</P>
+<P>        // Scroll Reveal Animation</P>
+<P>        function reveal() {</P>
+<P>            var reveals = document.querySelectorAll(&quot;.reveal&quot;);</P>
+<P>            for (var i = 0; i &lt; reveals.length; i++) {</P>
+<P>                var windowHeight = window.innerHeight;</P>
+<P>                var elementTop =
+reveals[i].getBoundingClientRect().top;</P>
+<P>                var elementVisible = 150;</P>
+<P>                if (elementTop &lt; windowHeight - elementVisible)
+{</P>
+<P>                    reveals[i].classList.add(&quot;active&quot;);</P>
+<P>                }</P>
+<P>            }</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        window.addEventListener(&quot;scroll&quot;, reveal);</P>
+<P>        reveal(); // Trigger once on load</P>
+<P><BR><BR>
+</P>
+<P>        // Header scroll effect</P>
+<P>        window.addEventListener('scroll', function() {</P>
+<P>            const header = document.getElementById('header');</P>
+<P>            if (window.scrollY &gt; 100) {</P>
+<P>                header.style.boxShadow = '0 2px 20px
+rgba(0,0,0,0.1)';</P>
+<P>            } else {</P>
+<P>                header.style.boxShadow = '0 2px 10px
+rgba(0,0,0,0.05)';</P>
+<P>            }</P>
+<P>        });</P>
+<P><BR><BR>
+</P>
+<P>        // Modal functions</P>
+<P>        function openModal() {</P>
+<P>           
+document.getElementById('contactModal').classList.add('active');</P>
+<P>            document.body.style.overflow = 'hidden';</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        function closeModal() {</P>
+<P>           
+document.getElementById('contactModal').classList.remove('active');</P>
+<P>            document.body.style.overflow = 'auto';</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        // Close modal on outside click</P>
+<P>       
+document.getElementById('contactModal').addEventListener('click',
+function(e) {</P>
+<P>            if (e.target === this) {</P>
+<P>                closeModal();</P>
+<P>            }</P>
+<P>        });</P>
+<P><BR><BR>
+</P>
+<P>        // Form submission</P>
+<P>        function handleSubmit(e) {</P>
+<P>            e.preventDefault();</P>
+<P>            alert('&iexcl;Gracias por tu solicitud! Nos pondremos
+en contacto contigo muy pronto.');</P>
+<P>            closeModal();</P>
+<P>            e.target.reset();</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        // Smooth scroll for navigation links</P>
+<P>        document.querySelectorAll('a[href^=&quot;#&quot;]').forEach(anchor
+=&gt; {</P>
+<P>            anchor.addEventListener('click', function (e) {</P>
+<P>                e.preventDefault();</P>
+<P>                const target =
+document.querySelector(this.getAttribute('href'));</P>
+<P>                if (target) {</P>
+<P>                    target.scrollIntoView({</P>
+<P>                        behavior: 'smooth',</P>
+<P>                        block: 'start'</P>
+<P>                    });</P>
+<P>                }</P>
+<P>            });</P>
+<P>        });</P>
+<P><BR><BR>
+</P>
+<P>        // Mobile menu toggle (simplified)</P>
+<P>        function toggleMobileMenu() {</P>
+<P>            alert('Men&uacute; m&oacute;vil - En implementaci&oacute;n
+completa esto mostrar&iacute;a un men&uacute; deslizable');</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        // Counter animation for stats</P>
+<P>        function animateValue(obj, start, end, duration) {</P>
+<P>            let startTimestamp = null;</P>
+<P>            const step = (timestamp) =&gt; {</P>
+<P>                if (!startTimestamp) startTimestamp = timestamp;</P>
+<P>                const progress = Math.min((timestamp -
+startTimestamp) / duration, 1);</P>
+<P>                obj.innerHTML = Math.floor(progress * (end -
+start) + start) + (obj.dataset.suffix || '');</P>
+<P>                if (progress &lt; 1) {</P>
+<P>                    window.requestAnimationFrame(step);</P>
+<P>                }</P>
+<P>            };</P>
+<P>            window.requestAnimationFrame(step);</P>
+<P>        }</P>
+<P><BR><BR>
+</P>
+<P>        // Trigger counter animation when hero is visible</P>
+<P>        const observer = new IntersectionObserver((entries) =&gt;
+{</P>
+<P>            entries.forEach(entry =&gt; {</P>
+<P>                if (entry.isIntersecting) {</P>
+<P>                    const stats =
+entry.target.querySelectorAll('.stat-number');</P>
+<P>                    stats.forEach(stat =&gt; {</P>
+<P>                        const value = parseInt(stat.innerText);</P>
+<P>                        const suffix =
+stat.innerText.replace(/[0-9]/g, '');</P>
+<P>                        stat.dataset.suffix = suffix;</P>
+<P>                        animateValue(stat, 0, value, 2000);</P>
+<P>                    });</P>
+<P>                    observer.unobserve(entry.target);</P>
+<P>                }</P>
+<P>            });</P>
+<P>        });</P>
+<P><BR><BR>
+</P>
+<P>        const heroStats = document.querySelector('.hero-stats');</P>
+<P>        if (heroStats) observer.observe(heroStats);</P>
+<P>    &lt;/script&gt;</P>
+<P>&lt;/body&gt;</P>
+<P>&lt;/html&gt;</P>
+</BODY>
+</HTML>
